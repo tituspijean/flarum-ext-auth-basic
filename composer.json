@@ -1,0 +1,34 @@
+{
+	"name": "tituspijean/flarum-ext-auth-basic",
+	"description": "Allow users to automatically be logged in if PHP_AUTH_USER and PHP_AUTH_PW variables are set by the server.",
+	"type": "flarum-extension",
+	"keywords": ["authentication"],
+	"license": "MIT",
+	"authors": [{
+		"name": "TitusPiJean",
+		"email": "tituspijean@outlook.com"
+	}],
+	"support": {
+		"issues": "https://github.com/tituspijean/flarum-ext-auth-autologin/issues",
+		"source": "https://github.com/tituspijean/flarum-ext-auth-autologin"
+	},
+	"require": {
+		"flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+	},
+	"autoload": {
+		"psr-4": {
+			"TitusPiJean\\Flarum\\BasicAuth\\": "src/"
+		}
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "BasicAuth",
+			"icon": {
+				"name": "far fa-id-badge",
+				"backgroundColor": "#b15959",
+				"color": "#fff"
+			}
+		}
+	},
+	"minimum-stability": "beta"
+}
